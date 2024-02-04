@@ -14,11 +14,13 @@ This is a simple newsletter subscription app built with Node.js, Express, MongoD
 ## Setup
 
 1. **Clone the Repository:**
+
    ```bash
    git clone https://github.com/taiwoajasa245/Newsletter.git
    cd newsletter-subscription-app
 
 2. **install Dependencies:**
+
    ```bash
    npm install  
 
@@ -30,6 +32,7 @@ This is a simple newsletter subscription app built with Node.js, Express, MongoD
 - Update email credentials and settings in utils/email.js.
 
 5. **Run the Application:**
+
    ```bash
    npm run start  
 
