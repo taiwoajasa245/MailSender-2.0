@@ -1,3 +1,3 @@
 # Newsletter 
 
-subscribe to newsletter 
+subscribe to newsletter. 
