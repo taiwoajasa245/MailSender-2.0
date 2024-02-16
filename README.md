@@ -9,7 +9,7 @@ This is a simple newsletter subscription app built with Node.js, Express, MongoD
   - Unique email validation to avoid duplicate subscriptions.
 
 - **Newsletter Sending:**
-  - Ability to send newsletters to all subscribers.
+  - Ability to send newsletters to all subscribers
 
 ## Setup
 
