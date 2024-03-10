@@ -9,7 +9,7 @@ This is a simple newsletter subscription app built with Node.js, Express, MongoD
   - Unique email validation to avoid duplicate subscriptions.
 
 - **Newsletter Sending:**
-  - Ability to send newsletters to all subscribers.
+  - Ability to send newsletters to all subscribers
 
 ## Setup
 
@@ -18,11 +18,13 @@ This is a simple newsletter subscription app built with Node.js, Express, MongoD
    ```bash
    git clone https://github.com/taiwoajasa245/Newsletter.git
    cd newsletter-subscription-app
+   ```
 
 2. **install Dependencies:**
 
    ```bash
-   npm install  
+   npm install
+   ``` 
 
 3. **Setup MongoDB:**
 - Create a MongoDB database and update the connection string in server.js
@@ -34,7 +36,8 @@ This is a simple newsletter subscription app built with Node.js, Express, MongoD
 5. **Run the Application:**
 
    ```bash
-   npm run start  
+   npm run start
+   ```
 
 6. **Test the Application:**
 - Access the application at http://localhost:3000.
@@ -46,16 +49,19 @@ This is a simple newsletter subscription app built with Node.js, Express, MongoD
 ## Endpoints
 
 **Subscribe:**
+<<<<<<< HEAD
 ```bash
+=======
+    ```
+>>>>>>> cfc90f91ee25fabf1e6ad001181f94d14f28de6c
     POST /subscribers/subscribe
-    Body: { "email": "user@example.com", "firstName": "John", "lastName": "Doe" }
-
+    Body: { "firstName": "John", "lastName": "Doe" "email": "user@example.com",  } 
+    ```
 **Send Newsletter:**
-    ```bash
+    ```
     POST /newsletter/send
     Body: { "subject": "Newsletter Subject", "text": "Newsletter Content" }
-    
-
+    ```
 ## Technologies Used
 
 - Node.js
