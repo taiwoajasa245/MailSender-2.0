@@ -16,7 +16,7 @@ router.post('/subscribe/', async (req, res) => {
 
     const { firstName, lastName, email } = req.body;
 
-    console.log(req.body)
+    // console.log(req.body)
 
 
     try {

@@ -46,7 +46,7 @@ This is a simple newsletter subscription app built with Node.js, Express, MongoD
 ## Endpoints
 
 **Subscribe:**
-    ```bash
+```bash
     POST /subscribers/subscribe
     Body: { "email": "user@example.com", "firstName": "John", "lastName": "Doe" }
 
