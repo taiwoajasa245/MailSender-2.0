@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
 });
 
 
-router.post('/subscribe/', async (req, res) => {
+router.post('/subscribe', async (req, res) => {
 
     const { firstName, lastName, email } = req.body;
 
@@ -25,7 +25,7 @@ router.post('/subscribe/', async (req, res) => {
         const existingSubscriber = await Subscriber.findOne({ email });
 
         if (existingSubscriber) {
-            return res.status(400).json({ Error: 'Email is already subscribed.' });
+            return res.status(400).json({ Error: 'You are already on our list.' });
         }
 
 

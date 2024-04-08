@@ -5,7 +5,7 @@ const Subscriber = require('../models/subscriber');
 const { sendNewsletter } = require('../utils/email');
 
 
-
+// Admin 
 router.get('/send', (req, res) => {
     res.render('newsletter', { title: 'Express Page' });
 });
@@ -17,7 +17,7 @@ router.post('/send', async (req, res) => {
         // Fetch all subscribers from the database
         const subscribers = await Subscriber.find();
 
-        console.log(subscribers); 
+    
 
         // Send newsletter to each subscriber
         for (const subscriber of subscribers) {
@@ -29,6 +29,7 @@ router.post('/send', async (req, res) => {
         console.error('Error sending newsletter:', error);
         res.status(500).json({ error: 'Internal Server Error' });
     }
+
 });
 
 module.exports = router;
